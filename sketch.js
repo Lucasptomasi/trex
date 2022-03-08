@@ -108,7 +108,7 @@ function draw(){
    ground.velocityX = 0;
    gp_Cacto.setLifetimeEach(-1);
    trex.changeAnimation("morrido");
-   if(mousePressedOver(restart)){
+   if(mousePressedOver(restart)||touches.length > 0){
     gp_Cacto.destroyEach();
     gp_nuven.destroyEach();
     gamestate = gamestate - 1;
